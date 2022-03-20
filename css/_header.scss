@@ -12,6 +12,8 @@ header {
     left: 0;
     background-color: $white;
     padding: 1rem;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 20%);
 
     .hamburger_button {
         padding-right: 1rem;
@@ -47,9 +49,6 @@ header {
     }
 }
 
-.header {
-    box-shadow: 0 4px 10px rgb(0 0 0 / 20%);
-}
 
 @media #{$sp} {
     .pc_menu {

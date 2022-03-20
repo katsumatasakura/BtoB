@@ -21,6 +21,16 @@ h1 {
   font-size: 2.8rem;
   font-weight: 500;
   text-align: center;
+  position: relative;
+}
+h1::before {
+  content: "";
+  width: 2rem;
+  height: 2px;
+  background-color: #40F3A6;
+  position: absolute;
+  top: 4rem;
+  left: calc(50% - 1rem);
 }
 
 h2 {
@@ -34,6 +44,16 @@ ul {
 a {
   color: #403B3B;
   text-decoration: none;
+}
+
+.button {
+  width: 22rem;
+  margin: 0 auto 2rem;
+  padding: 1.5rem 0;
+  text-align: center;
+  background-color: #40F3A6;
+  border-radius: 7px;
+  box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 769px) {
@@ -63,6 +83,8 @@ header {
   left: 0;
   background-color: #fff;
   padding: 1rem;
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 header .hamburger_button {
   padding-right: 1rem;
@@ -91,10 +113,6 @@ header .sp_menu .sp_menu_list {
 }
 header .sp_menu .sp_menu_list li {
   padding: 1.5rem 0;
-}
-
-.header {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
@@ -129,6 +147,7 @@ header .sp_menu .sp_menu_list li {
   width: 100vw;
   background: #fff;
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 100;
 }
 .action_button div {
   width: 50%;
@@ -136,6 +155,74 @@ header .sp_menu .sp_menu_list li {
 }
 .action_button div:first-child {
   border-right: solid 1px #403B3B;
+}
+
+#merit p {
+  text-align: center;
+}
+#merit .container {
+  display: flex;
+  flex-direction: column;
+}
+#merit .container .merit_box {
+  margin-bottom: 3rem;
+}
+#merit .container .merit_box h2 {
+  text-align: center;
+}
+#merit .container .merit_box .meritimage {
+  width: 33.5rem;
+  height: 15.4rem;
+  border-radius: 7px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+#merit .container .merit_box .meritimage.first {
+  background-image: url(../images/merit/merit1.png);
+  background-position-x: 1rem;
+}
+#merit .container .merit_box .meritimage.second {
+  background-image: url(../images/merit/merit2.png);
+  background-position-x: 1rem;
+}
+#merit .container .merit_box .meritimage.third {
+  background-image: url(../images/merit/merit3.png);
+}
+#merit .container .merit_box .meritimage.forth {
+  background-image: url(../images/merit/merit4.png);
+}
+
+#fee {
+  background-color: #241F60;
+  color: #fff;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 4rem 2rem;
+}
+#fee .month_fee {
+  text-align: right;
+}
+#fee .container {
+  display: flex;
+  align-items: center;
+}
+#fee .container div {
+  width: 14.6rem;
+  padding: 2.4rem;
+  border-radius: 7px;
+  background-color: #fff;
+  color: #403B3B;
+  text-align: center;
+}
+#fee .container div span {
+  font-size: 3.7rem;
+}
+#fee .container > span::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 3rem;
+  font-weight: 900;
+  content: "+";
+  color: #40F3A6;
+  margin: auto 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

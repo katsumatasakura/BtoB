@@ -1,0 +1,44 @@
+//
+// 料金のスタイル
+//
+
+#fee {
+    background-color: $navy;
+    color: $white;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 4rem 2rem;
+
+    .month_fee {
+        text-align: right;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+
+        div {
+            width: 14.6rem;
+            padding: 2.4rem;
+            border-radius: 7px;
+            background-color: $white;
+            color: $black;
+            text-align: center;
+
+            span {
+                font-size: 3.7rem;
+            }
+        }
+
+        >span {
+            &::before {
+                font-family: "Font Awesome 5 Free";
+                font-size: 3rem;
+                font-weight: 900;
+                content: "\2b";
+                color: $green;
+                margin: auto 1rem;
+            }
+        }
+    }
+}
