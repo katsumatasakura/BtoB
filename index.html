@@ -9,12 +9,143 @@
     <!-- css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- font -->
+    <script src="https://kit.fontawesome.com/02d46954cd.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <picture>
+            <source media="(max-width:768px)" srcset="./images/header/logo_sp.png">
+            <source media="(min-width:769px)" srcset="./images/header/logo_pc.png">
+            <img src="./images/header/logo_sp.png" alt="logo">
+        </picture>
+        <div class="sp_menu">
+            <div class="hamburger_button"><i class="fa-solid fa-bars" aria-label="ハンバーガーメニュー"></i></div>
+            <ul class="sp_menu_list">
+                <li><a href="#merit">メリット</a></li>
+                <li><a href="#fee">料金</a></li>
+                <li><a href="#ex">導入事例</a></li>
+                <li><a href="#offer">お申し込み</a></li>
+                <li><a href="#inquiry">お問い合わせ</a></li>
+            </ul>
+        </div>
+        <div class="pc_menu">
+            <ul class="pc_menu_list">
+                <li><a href="#merit">メリット</a></li>
+                <li><a href="#fee">料金</a></li>
+                <li><a href="#ex">導入事例</a></li>
+                <li><a href="#offer">お申し込み</a></li>
+                <li><a href="#inquiry">お問い合わせ</a></li>
+            </ul>
+
+        </div>
+    </header>
+    <main>
+        <section class="firstview">
+            <h2>紙で申請、ハンコで承認は　もうやめましょう。</h2>
+            <picture class="logo">
+                <source media="(max-width:768px)" srcset="./images/firstview/logo_sp.png">
+                <source media="(min-width:769px)" srcset="./images/firstview/logo_pc.png">
+                <img src="./images/firstview/logo_sp.png" alt="logo">
+            </picture>
+            <picture class="woman">
+                <source media="(max-width:768px)" srcset="./images/firstview/woman_sp.png">
+                <source media="(min-width:769px)" srcset="./images/firstview/woman_pc.png">
+                <img src="./images/firstview/woman_sp.png" alt="woman">
+            </picture>
+        </section>
+        <section class="action_button">
+            <div><a href="#">資料ダウンロード</a></div>
+            <div><a href="#">無料でお試し</a></div>
+        </section>
+        <section id="merit">
+            <h1>メリット</h1>
+            <div class="container">
+                <div class="merit_box">
+                    <h2>テンプレートをかんたん作成！</h2>
+                    <div class="meritimage1"></div>
+                    <p>目的に合わせて、申請項目やレイアウトを自由に組み合わせられます。また、分かりやすい画面で直感的に操作できるので、簡単に作成できます。</p>
+                </div>
+                <div class="merit_box">
+                    <h2>ステータスがすぐ分かる！</h2>
+                    <div class="meritimage2"></div>
+                    <p>申請状況を一目でチェックできるので、「あの申請は今どこに…？」ということがなくなります。承認や差戻しも自動でお知らせします。</p>
+                </div>
+                <div class="merit_box">
+                    <h2>過去の稟議もらくらく検索！</h2>
+                    <div class="meritimage3"></div>
+                    <p>キーワードや条件の絞り込みで簡単に検索できます。過去の稟議を使って複写入力もできるので、業務の効率化につながります。</p>
+                </div>
+                <div class="merit_box">
+                    <h2>保存期間を自動で管理！</h2>
+                    <div class="meritimage4"></div>
+                    <p>申請カテゴリごとに保存期間が設定でき、稟議が終われば自動的に設定された期間で保存されます。誤廃棄や、無駄に長く保存することを防げます。</p>
+                </div>
+            </div>
+            <p>＼　もっと詳しく！　／</p>
+            <div class="button"><a href="#">資料ダウンロード</a></div>
+        </section>
+        <section id="fee">
+            <h1>料金</h1>
+            <div>
+                <p>＼　基本プランの場合　／</p>
+                <div>初期費用<span>10</span>万円</div>
+                <i class="fa-solid fa-plus" aria-label="プラス"></i>
+                <div>月額費用<span>3</span>万円～</div>
+            </div>
+            <p>月額は従業員数やプランに応じて異なります。<br>詳細な料金を知りたい方は、下記ボタンよりお問い合わせください。</p>
+            <div class="button"><a href="#">料金を詳しく知りたい</a></div>
+        </section>
+        <section id="ex">
+            <h1>導入事例</h1>
+            <div class="ex_box">
+                <div class="eximage1"></div>
+                <h2>株式会社○○様</h2>
+                <p>スマートサイクルを導入したおかげで、社内の意思決定を迅速にすることができました。また、リモートワークができるようになったので社員の満足度も高いです。</p>
+            </div>
+            <div class="ex_box">
+                <div class="eximage2"></div>
+                <h2>△△株式会社様</h2>
+                <p>決裁後は自動的に保存期間が満了するまでデータが残るので、紛失の恐れがなく文書管理の点からも安心です。これまで紙で保管していたコストが削減できました。</p>
+            </div>
+            <div class="ex_box">
+                <div class="eximage3"></div>
+                <h2>株式会社□□様</h2>
+                <p>申請画面を自由にカスタマイズできるので、以前から使っていた申請様式をほぼ再現できました。導入時の社員の負担が最小限になったと思います。</p>
+            </div>
+        </section>
+        <section id="offer">
+            <h1>お申し込み</h1>
+            <p>スマートサイクルへのお申し込みは下のボタンから。<br>まずは無料で、機能制限なくお試しいただくこともできます。</p>
+            <div class="button"><a href="#">お申し込み</a></div>
+            <div class="button"><a href="#">無料でお試し</a></div>
+        </section>
+        <section id="inquiry">
+            <h1>お問い合わせ</h1>
+            <p>「スマートサイクルについてもっと知りたい」「うちで本当に導入できる？」など、お気軽にお問い合わせください。</p>
+            <div class="button"><a href="#">お問い合わせ</a></div>
+            <div class="button question"><a href="#">よくあるご質問はこちら</a></div>
+        </section>
+        <footer>
+            <picture>
+                <source media="(max-width:768px)" srcset="./images/footer/logo_white_sp.png">
+                <source media="(min-width:769px)" srcset="./images/footer/logo_white_pc.png">
+                <img src="./images/footer/logo_white_sp.png" alt="logo">
+            </picture>
+            <ul>
+                <li><i class="fa-solid fa-chevron-right"></i><a>メリット</a></li>
+                <li><i class="fa-solid fa-chevron-right"></i><a>料金</a></li>
+                <li><i class="fa-solid fa-chevron-right"></i><a>導入事例</a></li>
+                <li><i class="fa-solid fa-chevron-right"></i><a>資料ダウンロード</a></li>
+                <li><i class="fa-solid fa-chevron-right"></i><a>お問い合わせ</a></li>
+                <li><i class="fa-solid fa-chevron-right"></i><a>お申し込み</a></li>
+            </ul>
+            <p>株式会社スマートサイクル</p>
+            <small>©　SmartCycle, Inc. 2022</small>
+        </footer>
+    </main>
 </body>
 
 </html>
