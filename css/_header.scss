@@ -12,6 +12,7 @@ header {
     left: 0;
     background-color: $white;
     padding: 1rem;
+    filter: drop-shadow(3 3 3 rgba( 0, 0, 0, .8));
     
     .hamburger_button {
         padding-right: 1rem;
@@ -43,6 +44,10 @@ header {
             }
         }
     }
+}
+
+.header {
+    box-shadow: 0 4px 10px rgb(0 0 0 / 20%);
 }
 
 @media #{$sp} {

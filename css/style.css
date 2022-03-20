@@ -62,6 +62,7 @@ header {
   left: 0;
   background-color: #fff;
   padding: 1rem;
+  filter: drop-shadow(3 3 3 rgba(0, 0, 0, 0.8));
 }
 header .hamburger_button {
   padding-right: 1rem;
@@ -90,6 +91,10 @@ header .sp_menu .sp_menu_list li {
   padding: 1.5rem 0;
 }
 
+.header {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 768px) {
   .pc_menu {
     display: none;
@@ -99,11 +104,13 @@ header .sp_menu .sp_menu_list li {
   margin-right: 0;
   margin-left: 0;
   margin-top: 6rem;
+  padding-top: 2rem;
   background: url(../images/firstview/bg.png);
 }
 .firstview h2 {
   width: 24rem;
   margin-left: 2rem;
+  margin-top: 2rem;
 }
 .firstview .logo {
   margin-left: 2rem;
