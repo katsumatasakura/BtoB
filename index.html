@@ -11,18 +11,39 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- font -->
     <script src="https://kit.fontawesome.com/02d46954cd.js" crossorigin="anonymous"></script>
-
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'tnu5orz',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t); try { Typekit.load(config) } catch (e) {} };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
 </head>
 
 <body>
     <header>
-        <picture>
+        <picture href="#">
             <source media="(max-width:768px)" srcset="./images/header/logo_sp.png">
             <source media="(min-width:769px)" srcset="./images/header/logo_pc.png">
             <img src="./images/header/logo_sp.png" alt="logo">
         </picture>
-        <div class="sp_menu">
-            <div class="hamburger_button"><i class="fa-solid fa-bars" aria-label="ハンバーガーメニュー"></i></div>
+        <a href="#" class="hamburger_button"></a>
+        <nav class="sp_menu">
             <ul class="sp_menu_list">
                 <li><a href="#merit">メリット</a></li>
                 <li><a href="#fee">料金</a></li>
@@ -30,8 +51,8 @@
                 <li><a href="#offer">お申し込み</a></li>
                 <li><a href="#inquiry">お問い合わせ</a></li>
             </ul>
-        </div>
-        <div class="pc_menu">
+        </nav>
+        <nav class="pc_menu">
             <ul class="pc_menu_list">
                 <li><a href="#merit">メリット</a></li>
                 <li><a href="#fee">料金</a></li>
@@ -40,15 +61,15 @@
                 <li><a href="#inquiry">お問い合わせ</a></li>
             </ul>
 
-        </div>
+        </nav>
     </header>
     <main>
         <section class="firstview">
             <h2>紙で申請、ハンコで承認は　もうやめましょう。</h2>
             <picture class="logo">
-                <source media="(max-width:768px)" srcset="./images/firstview/logo_sp.png">
-                <source media="(min-width:769px)" srcset="./images/firstview/logo_pc.png">
-                <img src="./images/firstview/logo_sp.png" alt="logo">
+                <source media="(max-width:768px)" srcset="./images/firstview/top_logo_sp.png">
+                <source media="(min-width:769px)" srcset="./images/firstview/top_logo_pc.png">
+                <img src="./images/firstview/top_logo_sp.png" alt="logo">
             </picture>
             <picture class="woman">
                 <source media="(max-width:768px)" srcset="./images/firstview/woman_sp.png">

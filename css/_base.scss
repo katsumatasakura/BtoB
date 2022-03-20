@@ -1,0 +1,74 @@
+//
+// ベーススタイルの読み込み
+//
+
+// Google Fonts用のCSSを読み込み
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
+
+
+// 変数
+$navy: #241F60;
+$green: #40F3A6;
+$white: #fff;
+$black: #403B3B;
+$sp: "(max-width: 768px)";
+$pc: "(min-width: 769px)";
+
+
+// ベーススタイル
+
+html {
+    font-size: 62.5%;
+    line-height: 1.5;
+}
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-style: normal;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $black;
+}
+
+section {
+    margin: 4rem 2rem 4rem;
+}
+
+h1 {
+    font-family: yu-gothic-pr6n, sans-serif;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: $black;
+    text-decoration: none;
+}
+
+// pc表示
+@media #{$pc} {
+    body {
+        font-size: 1.6rem;
+    }
+
+    section {
+        margin: 5rem 14rem 5rem;
+    }
+
+    h1 {
+        font-size: 4.8rem;
+    }
+
+    h2 {
+        font-size: 3.2rem;
+    }
+
+}

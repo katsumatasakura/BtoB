@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap");
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-style: normal;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #403B3B;
+}
+
+section {
+  margin: 4rem 2rem 4rem;
+}
+
+h1 {
+  font-family: yu-gothic-pr6n, sans-serif;
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #403B3B;
+  text-decoration: none;
+}
+
+@media (min-width: 769px) {
+  body {
+    font-size: 1.6rem;
+  }
+
+  section {
+    margin: 5rem 14rem 5rem;
+  }
+
+  h1 {
+    font-size: 4.8rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  padding: 1rem;
+}
+header .hamburger_button {
+  padding-right: 1rem;
+}
+header .hamburger_button::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 2rem;
+  font-weight: 900;
+  content: "\f0c9";
+}
+header .sp_menu {
+  display: none;
+  z-index: 100;
+  background-color: #fff;
+  position: absolute;
+  opacity: 0.9;
+  padding: 6rem 0;
+  width: 100vw;
+  height: calc(100vh - 12rem);
+  box-sizing: border-box;
+}
+header .sp_menu .sp_menu_list {
+  margin: 5rem;
+}
+header .sp_menu .sp_menu_list li {
+  padding: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .pc_menu {
+    display: none;
+  }
+}
+.firstview {
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 6rem;
+  background: url(../images/firstview/bg.png);
+}
+.firstview h2 {
+  width: 24rem;
+  margin-left: 2rem;
+}
+.firstview .logo {
+  margin-left: 2rem;
+}
+.firstview .woman img {
+  width: 100vw;
+}
+
+/*# sourceMappingURL=style.css.map */

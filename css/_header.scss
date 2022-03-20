@@ -1,0 +1,54 @@
+//
+// ヘッダーのスタイル
+//
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: $white;
+    padding: 1rem;
+    
+    .hamburger_button {
+        padding-right: 1rem;
+
+        &::before {
+            font-family: "Font Awesome 5 Free";
+            font-size: 2rem;
+            font-weight: 900;
+            content: "\f0c9";
+        }
+    }
+
+    .sp_menu {
+        display: none;
+        z-index: 100;
+        background-color: $white;
+        position: absolute;
+        opacity: .9;
+        padding: 6rem 0;
+        width: 100vw;
+        height: calc(100vh - 12rem);
+        box-sizing: border-box;
+
+        .sp_menu_list {
+            margin: 5rem;
+
+            li {
+                padding: 1.5rem 0;
+            }
+        }
+    }
+}
+
+@media #{$sp} {
+    .pc_menu {
+        display: none;
+    }
+}
+
+// pc表示

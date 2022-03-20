@@ -1,0 +1,26 @@
+//
+// ファーストビューのスタイル
+//
+
+
+.firstview {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 6rem;
+    background: url(../images/firstview/bg.png);
+    
+    h2 {
+        width: 24rem;
+        margin-left: 2rem;
+    }
+    
+    .logo {
+        margin-left: 2rem;
+    }
+
+    .woman {
+        img {
+            width: 100vw;
+        }
+    }
+}
