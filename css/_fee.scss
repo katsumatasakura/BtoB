@@ -14,12 +14,13 @@
     }
 
     .month_fee {
-        text-align: right;
+        margin-left: calc(50% + 2.2rem);
     }
 
     .container {
         display: flex;
         align-items: center;
+        justify-content: center;
 
         div {
             width: 14.6rem;
@@ -43,6 +44,44 @@
                 color: $green;
                 margin: auto 1rem;
             }
+        }
+    }
+}
+
+//pc表示
+
+@media #{$pc} {
+    #fee {
+        padding: 5rem 14rem;
+
+        .month_fee {
+            margin-left: calc(50% - 10rem);
+        }
+
+        .container {
+            margin-bottom: 7rem;
+
+            div {
+                width: 50rem;
+                padding: 3rem 0;
+
+                span {
+                    font-size: 7.2rem;
+                }
+            }
+
+            >span {
+                &::before {
+                    font-size: 6rem;
+                    margin: auto 9rem;
+                }
+            }
+
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 4rem;
         }
     }
 }

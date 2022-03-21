@@ -31,9 +31,14 @@
             h.className += " wf-loading";
             tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
             tk.async = true;
-            tk.onload = tk.onreadystatechange = function() { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
                 f = true;
-                clearTimeout(t); try { Typekit.load(config) } catch (e) {} };
+                clearTimeout(t);
+                try { Typekit.load(config) }
+                catch (e) {}
+            };
             s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
@@ -41,7 +46,7 @@
 
 <body>
     <header class="header">
-        <picture href="#">
+        <picture>
             <source media="(max-width:768px)" srcset="./images/header/logo_sp.png">
             <source media="(min-width:769px)" srcset="./images/header/logo_pc.png">
             <img src="./images/header/logo_sp.png" alt="logo">
@@ -69,7 +74,7 @@
     </header>
     <main>
         <section class="firstview">
-            <h2>紙で申請、ハンコで承認は　もうやめましょう。</h2>
+            <h2>紙で申請、ハンコで承認は　<span>もうやめましょう。</span></h2>
             <picture class="logo">
                 <source media="(max-width:768px)" srcset="./images/firstview/top_logo_sp.png">
                 <source media="(min-width:769px)" srcset="./images/firstview/top_logo_pc.png">
@@ -90,23 +95,31 @@
             <div class="container">
                 <div class="merit_box">
                     <h2>テンプレートをかんたん作成！</h2>
-                    <div class="meritimage first"></div>
-                    <p>目的に合わせて、申請項目やレイアウトを自由に組み合わせられます。また、分かりやすい画面で直感的に操作できるので、簡単に作成できます。</p>
+                    <div class="merit_box_small">
+                        <div class="meritimage first"></div>
+                        <p>目的に合わせて、申請項目やレイアウトを自由に組み合わせられます。また、分かりやすい画面で直感的に操作できるので、簡単に作成できます。</p>
+                    </div>
                 </div>
                 <div class="merit_box">
                     <h2>ステータスがすぐ分かる！</h2>
-                    <div class="meritimage second"></div>
-                    <p>申請状況を一目でチェックできるので、「あの申請は今どこに…？」ということがなくなります。承認や差戻しも自動でお知らせします。</p>
+                    <div class="merit_box_small">
+                        <div class="meritimage second"></div>
+                        <p>申請状況を一目でチェックできるので、「あの申請は今どこに…？」ということがなくなります。承認や差戻しも自動でお知らせします。</p>
+                    </div>
                 </div>
                 <div class="merit_box">
                     <h2>過去の稟議もらくらく検索！</h2>
-                    <div class="meritimage third"></div>
-                    <p>キーワードや条件の絞り込みで簡単に検索できます。過去の稟議を使って複写入力もできるので、業務の効率化につながります。</p>
+                    <div class="merit_box_small">
+                        <div class="meritimage third"></div>
+                        <p>キーワードや条件の絞り込みで簡単に検索できます。過去の稟議を使って複写入力もできるので、業務の効率化につながります。</p>
+                    </div>
                 </div>
                 <div class="merit_box">
                     <h2>保存期間を自動で管理！</h2>
-                    <div class="meritimage forth"></div>
-                    <p id="document">申請カテゴリごとに保存期間が設定でき、稟議が終われば自動的に設定された期間で保存されます。誤廃棄や、無駄に長く保存することを防げます。</p>
+                    <div class="merit_box_small">
+                        <div class="meritimage forth"></div>
+                        <p id="document">申請カテゴリごとに保存期間が設定でき、稟議が終われば自動的に設定された期間で保存されます。誤廃棄や、無駄に長く保存することを防げます。</p>
+                    </div>
                 </div>
             </div>
             <p>\　もっと詳しく！　/</p>
@@ -114,7 +127,7 @@
         </section>
         <section id="fee">
             <h1>料金</h1>
-            <p class="month_fee">\　基本プランの場合　/</p>
+            <p class="month_fee">\ 基本プランの場合 /</p>
             <div class="container">
                 <div>初期費用<br><span>10</span>万円</div>
                 <span></span>
@@ -146,14 +159,18 @@
         <section id="offer">
             <h1>お申し込み</h1>
             <p>スマートサイクルへのお申し込みは下のボタンから。<br>まずは無料で、機能制限なくお試しいただくこともできます。</p>
-            <div class="button"><a href="#">お申し込み</a></div>
-            <div class="button"><a href="#">無料でお試し</a></div>
+            <div class="some_buttons">
+                <div class="button"><a href="#">お申し込み</a></div>
+                <div class="button"><a href="#">無料でお試し</a></div>
+            </div>
         </section>
         <section id="inquiry">
             <h1>お問い合わせ</h1>
             <p>「スマートサイクルについてもっと知りたい」「うちで本当に導入できる？」など、お気軽にお問い合わせください。</p>
-            <div class="button"><a href="#">お問い合わせ</a></div>
-            <div class="button question"><a href="#">よくあるご質問はこちら</a></div>
+            <div class="some_buttons">
+                <div class="button"><a href="#">お問い合わせ</a></div>
+                <div class="button question"><a href="#">よくあるご質問はこちら</a></div>
+            </div>
         </section>
         <footer>
             <picture>

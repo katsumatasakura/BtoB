@@ -14,3 +14,24 @@
         box-shadow: -3px 3px 3px rgb(0 0 0 / 10%);
     }
 }
+
+
+// pc表示
+
+@media #{$pc} {
+    #inquiry {
+        p {
+            text-align: center;
+        }
+        
+        .some_buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .button {
+                margin: 2rem;
+            }
+        }
+    }
+}

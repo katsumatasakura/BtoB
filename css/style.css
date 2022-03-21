@@ -74,9 +74,23 @@ a {
   h1 {
     font-size: 4.8rem;
   }
+  h1::before {
+    width: 4rem;
+    height: 4px;
+    top: 7rem;
+    left: calc(50% - 2rem);
+  }
 
   h2 {
     font-size: 3.2rem;
+  }
+
+  .button {
+    width: 38rem;
+    margin: 0 auto 2rem;
+    padding: 2rem 0;
+    font-size: 3.2rem;
+    font-weight: 400;
   }
 }
 header {
@@ -131,6 +145,42 @@ header .sp_menu .sp_menu_list li a {
     display: none;
   }
 }
+@media (min-width: 769px) {
+  header {
+    padding: 1rem 10rem 1rem 14rem;
+  }
+  header .hamburger_button {
+    display: none;
+  }
+  header .pc_menu .pc_menu_list {
+    display: flex;
+  }
+  header .pc_menu .pc_menu_list li {
+    font-size: 3.2rem;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  header .pc_menu .pc_menu_list li:nth-child(1) {
+    width: 20rem;
+  }
+  header .pc_menu .pc_menu_list li:nth-child(2) {
+    width: 15rem;
+  }
+  header .pc_menu .pc_menu_list li:nth-child(3) {
+    width: 20rem;
+  }
+  header .pc_menu .pc_menu_list li:nth-child(4) {
+    width: 25rem;
+  }
+  header .pc_menu .pc_menu_list li:nth-child(5) {
+    width: 27.2rem;
+  }
+  header .pc_menu .pc_menu_list li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+}
 .firstview {
   margin-right: 0;
   margin-left: 0;
@@ -151,6 +201,37 @@ header .sp_menu .sp_menu_list li a {
   width: 100vw;
 }
 
+@media (min-width: 769px) {
+  .firstview {
+    background: url(../images/firstview/bg_pc.png);
+    background-size: cover;
+    position: relative;
+    height: calc(100vh - 10rem);
+    margin-top: 10rem;
+  }
+  .firstview h2 {
+    position: absolute;
+    top: 8rem;
+    left: calc(50% - 42rem);
+    width: 74rem;
+  }
+  .firstview h2 span {
+    color: #fff;
+  }
+  .firstview .logo {
+    position: absolute;
+    top: 23rem;
+    left: 17rem;
+    z-index: 99;
+  }
+  .firstview .woman {
+    position: absolute;
+    left: calc(100vw - 127rem);
+  }
+  .firstview .woman img {
+    width: 127rem;
+  }
+}
 .action_button {
   display: flex;
   margin: 0;
@@ -169,6 +250,11 @@ header .sp_menu .sp_menu_list li a {
   border-right: solid 1px #403B3B;
 }
 
+@media (min-width: 769px) {
+  .action_button {
+    display: none;
+  }
+}
 #merit > p {
   margin-top: 0;
   text-align: center;
@@ -188,6 +274,7 @@ header .sp_menu .sp_menu_list li a {
   height: 15.4rem;
   border-radius: 7px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
 }
 #merit .container .merit_box .meritimage.first {
   background-image: url(../images/merit/merit1.png);
@@ -204,6 +291,23 @@ header .sp_menu .sp_menu_list li a {
   background-image: url(../images/merit/merit4.png);
 }
 
+@media (min-width: 769px) {
+  #merit .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+  }
+  #merit .container .merit_box {
+    width: calc((100% - 4rem) / 2);
+  }
+  #merit .container .merit_box .merit_box_small {
+    display: flex;
+  }
+  #merit .container .merit_box .merit_box_small p {
+    margin-left: 2rem;
+  }
+}
 #fee {
   background-color: #241F60;
   color: #fff;
@@ -215,11 +319,12 @@ header .sp_menu .sp_menu_list li a {
   color: #fff;
 }
 #fee .month_fee {
-  text-align: right;
+  margin-left: calc(50% + 2.2rem);
 }
 #fee .container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 #fee .container div {
   width: 14.6rem;
@@ -241,6 +346,32 @@ header .sp_menu .sp_menu_list li a {
   margin: auto 1rem;
 }
 
+@media (min-width: 769px) {
+  #fee {
+    padding: 5rem 14rem;
+  }
+  #fee .month_fee {
+    margin-left: calc(50% - 10rem);
+  }
+  #fee .container {
+    margin-bottom: 7rem;
+  }
+  #fee .container div {
+    width: 50rem;
+    padding: 3rem 0;
+  }
+  #fee .container div span {
+    font-size: 7.2rem;
+  }
+  #fee .container > span::before {
+    font-size: 6rem;
+    margin: auto 9rem;
+  }
+  #fee p {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+}
 #ex {
   padding-bottom: 2rem;
 }
@@ -255,6 +386,7 @@ header .sp_menu .sp_menu_list li a {
   height: 17.5rem;
   background-size: contain;
   border-radius: 7px 7px 0 0;
+  background-repeat: no-repeat;
 }
 .ex_box .eximage.first {
   background-image: url(../images/ex/jirei_1.jpg);
@@ -284,6 +416,18 @@ header .sp_menu .sp_menu_list li a {
   color: #fff;
 }
 
+@media (min-width: 769px) {
+  #offer p {
+    text-align: center;
+  }
+  #offer .some_buttons {
+    display: flex;
+    justify-content: center;
+  }
+  #offer .some_buttons .button {
+    margin: 2rem;
+  }
+}
 #inquiry {
   padding-bottom: 0.1rem;
 }
@@ -295,6 +439,19 @@ header .sp_menu .sp_menu_list li a {
   box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
+@media (min-width: 769px) {
+  #inquiry p {
+    text-align: center;
+  }
+  #inquiry .some_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #inquiry .some_buttons .button {
+    margin: 2rem;
+  }
+}
 footer {
   padding: 2rem 2rem 6.5rem;
   background-color: #241F60;

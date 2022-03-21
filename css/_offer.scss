@@ -13,3 +13,22 @@
         color: $white;
     }
 }
+
+//pc表示
+
+@media #{$pc} {
+    #offer {
+        p {
+            text-align: center;
+        }
+        
+        .some_buttons {
+            display: flex;
+            justify-content: center;
+            
+            .button {
+                margin: 2rem;
+            }
+        }
+    }
+}

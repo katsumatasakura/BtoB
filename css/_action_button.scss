@@ -21,3 +21,11 @@
         }
     }
 }
+
+// pc表示
+
+@media #{$pc} {
+    .action_button {
+        display: none;
+    }
+}

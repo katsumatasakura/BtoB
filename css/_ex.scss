@@ -17,6 +17,7 @@
         height: 17.5rem;
         background-size: contain;
         border-radius: 7px 7px 0 0;
+        background-repeat: no-repeat;
 
         &.first {
             background-image: url(../images/ex/jirei_1.jpg);
@@ -40,4 +41,11 @@
     p {
         margin: 0 2rem;
     }
+}
+
+
+//pc表示
+
+@media #{$pc} {
+    
 }
