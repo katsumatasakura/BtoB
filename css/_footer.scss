@@ -1,0 +1,38 @@
+//
+// フッターのスタイル
+//
+
+footer {
+    padding: 2rem 2rem 6.5rem;
+    background-color: $navy;
+    color: $white;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+
+        .footer_box {
+            width: 45%;
+
+            li {
+                margin-bottom: 0.5rem;
+                color: $white;
+
+                &::before {
+                    font-family: "Font Awesome 5 Free";
+                    font-size: 1.3rem;
+                    font-weight: 900;
+                    content: "\f054";
+                    margin-right: 0.5rem;
+                    //margin-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+
+    small {
+        display: block;
+        text-align: center;
+    }
+}

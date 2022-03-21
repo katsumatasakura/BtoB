@@ -9,6 +9,9 @@
     <!-- css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- slick default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <!-- font -->
     <script src="https://kit.fontawesome.com/02d46954cd.js" crossorigin="anonymous"></script>
     <script>
@@ -107,7 +110,7 @@
                 <div class="merit_box">
                     <h2>保存期間を自動で管理！</h2>
                     <div class="meritimage forth"></div>
-                    <p>申請カテゴリごとに保存期間が設定でき、稟議が終われば自動的に設定された期間で保存されます。誤廃棄や、無駄に長く保存することを防げます。</p>
+                    <p id="document">申請カテゴリごとに保存期間が設定でき、稟議が終われば自動的に設定された期間で保存されます。誤廃棄や、無駄に長く保存することを防げます。</p>
                 </div>
             </div>
             <p>＼　もっと詳しく！　／</p>
@@ -118,7 +121,6 @@
             <p class="month_fee">\　基本プランの場合　/</p>
             <div class="container">
                 <div>初期費用<br><span>10</span>万円</div>
-                <!-- <i class="fa-solid fa-plus" aria-label="プラス"></i> -->
                 <span></span>
                 <div>月額費用<br><span>3</span>万円～</div>
             </div>
@@ -127,20 +129,22 @@
         </section>
         <section id="ex">
             <h1>導入事例</h1>
-            <div class="ex_box">
-                <div class="eximage1"></div>
-                <h2>株式会社○○様</h2>
-                <p>スマートサイクルを導入したおかげで、社内の意思決定を迅速にすることができました。また、リモートワークができるようになったので社員の満足度も高いです。</p>
-            </div>
-            <div class="ex_box">
-                <div class="eximage2"></div>
-                <h2>△△株式会社様</h2>
-                <p>決裁後は自動的に保存期間が満了するまでデータが残るので、紛失の恐れがなく文書管理の点からも安心です。これまで紙で保管していたコストが削減できました。</p>
-            </div>
-            <div class="ex_box">
-                <div class="eximage3"></div>
-                <h2>株式会社□□様</h2>
-                <p>申請画面を自由にカスタマイズできるので、以前から使っていた申請様式をほぼ再現できました。導入時の社員の負担が最小限になったと思います。</p>
+            <div class="carousel">
+                <div class="ex_box">
+                    <div class="eximage first"></div>
+                    <h2>株式会社○○様</h2>
+                    <p>スマートサイクルを導入したおかげで、社内の意思決定を迅速にすることができました。また、リモートワークができるようになったので社員の満足度も高いです。</p>
+                </div>
+                <div class="ex_box">
+                    <div class="eximage second"></div>
+                    <h2>△△株式会社様</h2>
+                    <p>決裁後は自動的に保存期間が満了するまでデータが残るので、紛失の恐れがなく文書管理の点からも安心です。これまで紙で保管していたコストが削減できました。</p>
+                </div>
+                <div class="ex_box">
+                    <div class="eximage third"></div>
+                    <h2>株式会社□□様</h2>
+                    <p>申請画面を自由にカスタマイズできるので、以前から使っていた申請様式をほぼ再現できました。導入時の社員の負担が最小限になったと思います。</p>
+                </div>
             </div>
         </section>
         <section id="offer">
@@ -162,17 +166,26 @@
                 <img src="./images/footer/logo_white_sp.png" alt="logo">
             </picture>
             <ul>
-                <li><i class="fa-solid fa-chevron-right"></i><a>メリット</a></li>
-                <li><i class="fa-solid fa-chevron-right"></i><a>料金</a></li>
-                <li><i class="fa-solid fa-chevron-right"></i><a>導入事例</a></li>
-                <li><i class="fa-solid fa-chevron-right"></i><a>資料ダウンロード</a></li>
-                <li><i class="fa-solid fa-chevron-right"></i><a>お問い合わせ</a></li>
-                <li><i class="fa-solid fa-chevron-right"></i><a>お申し込み</a></li>
+                <div class="footer_box">
+                    <li><a href="#merit">メリット</a></li>
+                    <li><a href="#fee">料金</a></li>
+                    <li><a href="#ex">導入事例</a></li>
+                </div>
+                <div class="footer_box">
+                    <li><a href="#document">資料ダウンロード</a></li>
+                    <li><a href="#offer">お申し込み</a></li>
+                    <li><a href="#inquiry">お問い合わせ</a></li>
+                </div>
             </ul>
             <p>株式会社スマートサイクル</p>
             <small>©　SmartCycle, Inc. 2022</small>
         </footer>
     </main>
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/carousel.js"></script>
+
 </body>
 
 </html>

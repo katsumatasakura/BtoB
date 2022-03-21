@@ -52,6 +52,7 @@ a {
   padding: 1.5rem 0;
   text-align: center;
   background-color: #40F3A6;
+  color: #241F60;
   border-radius: 7px;
   box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.2);
 }
@@ -84,7 +85,7 @@ header {
   background-color: #fff;
   padding: 1rem;
   z-index: 100;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 header .hamburger_button {
   padding-right: 1rem;
@@ -146,7 +147,7 @@ header .sp_menu .sp_menu_list li {
   top: 61rem;
   width: 100vw;
   background: #fff;
-  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
   z-index: 100;
 }
 .action_button div {
@@ -157,7 +158,7 @@ header .sp_menu .sp_menu_list li {
   border-right: solid 1px #403B3B;
 }
 
-#merit p {
+#merit > p {
   text-align: center;
 }
 #merit .container {
@@ -171,7 +172,7 @@ header .sp_menu .sp_menu_list li {
   text-align: center;
 }
 #merit .container .merit_box .meritimage {
-  width: 33.5rem;
+  width: 100%;
   height: 15.4rem;
   border-radius: 7px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
@@ -223,6 +224,76 @@ header .sp_menu .sp_menu_list li {
   content: "+";
   color: #40F3A6;
   margin: auto 1rem;
+}
+
+.ex_box {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  padding-bottom: 2rem;
+}
+.ex_box .eximage {
+  width: 100%;
+  height: 17.5rem;
+  background-size: contain;
+  border-radius: 7px 7px 0 0;
+}
+.ex_box .eximage.first {
+  background-image: url(../images/ex/jirei_1.jpg);
+}
+.ex_box .eximage.second {
+  background-image: url(../images/ex/jirei_2.jpg);
+}
+.ex_box .eximage.third {
+  background-image: url(../images/ex/jirei_3.jpg);
+}
+.ex_box h2 {
+  margin-left: 2rem;
+}
+.ex_box p {
+  margin: 0 2rem;
+}
+
+#offer {
+  background-color: #241F60;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 4rem 2rem;
+  color: #fff;
+}
+
+.button.question {
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  padding: 1rem 0;
+}
+
+footer {
+  padding: 2rem 2rem 6.5rem;
+  background-color: #241F60;
+  color: #fff;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+footer ul .footer_box {
+  width: 45%;
+}
+footer ul .footer_box li {
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+footer ul .footer_box li::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 1.3rem;
+  font-weight: 900;
+  content: "\f054";
+  margin-right: 0.5rem;
+}
+footer small {
+  display: block;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

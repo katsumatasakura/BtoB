@@ -3,7 +3,7 @@
 //
 
 #merit {
-    p {
+    >p {
         text-align: center;
     }
 
@@ -19,7 +19,7 @@
             }
 
             .meritimage {
-                width: 33.5rem;
+                width: 100%;
                 height: 15.4rem;
                 border-radius: 7px;
                 box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);

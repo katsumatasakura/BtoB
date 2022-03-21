@@ -1,0 +1,38 @@
+//
+// 導入事例のスタイル
+//
+
+.ex_box {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
+    //border: solid 1px $black;
+    border-radius: 7px;
+    padding-bottom: 2rem;
+
+    .eximage {
+        width: 100%;
+        height: 17.5rem;
+        background-size: contain;
+        border-radius: 7px 7px 0 0;
+
+        &.first {
+            background-image: url(../images/ex/jirei_1.jpg);
+        }
+
+        &.second {
+            background-image: url(../images/ex/jirei_2.jpg);
+        }
+
+        &.third {
+            background-image: url(../images/ex/jirei_3.jpg);
+        }
+
+    }
+    
+    h2 {
+        margin-left: 2rem;
+    }
+    
+    p {
+        margin: 0 2rem;
+    }
+}
