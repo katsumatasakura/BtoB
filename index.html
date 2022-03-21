@@ -12,12 +12,13 @@
     <!-- slick default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    <!-- font -->
+    <!-- font awesome -->
     <script src="https://kit.fontawesome.com/02d46954cd.js" crossorigin="anonymous"></script>
+    <!-- adobe fonts -->
     <script>
         (function(d) {
             var config = {
-                    kitId: 'tnu5orz',
+                    kitId: 'ylc5ctd',
                     scriptTimeout: 3000,
                     async: true
                 },
@@ -30,14 +31,9 @@
             h.className += " wf-loading";
             tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
             tk.async = true;
-            tk.onload = tk.onreadystatechange = function() {
-                a = this.readyState;
-                if (f || a && a != "complete" && a != "loaded") return;
+            tk.onload = tk.onreadystatechange = function() { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return;
                 f = true;
-                clearTimeout(t);
-                try { Typekit.load(config) }
-                catch (e) {}
-            };
+                clearTimeout(t); try { Typekit.load(config) } catch (e) {} };
             s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
@@ -113,7 +109,7 @@
                     <p id="document">申請カテゴリごとに保存期間が設定でき、稟議が終われば自動的に設定された期間で保存されます。誤廃棄や、無駄に長く保存することを防げます。</p>
                 </div>
             </div>
-            <p>＼　もっと詳しく！　／</p>
+            <p>\　もっと詳しく！　/</p>
             <div class="button"><a href="#">資料ダウンロード</a></div>
         </section>
         <section id="fee">
@@ -161,9 +157,9 @@
         </section>
         <footer>
             <picture>
-                <source media="(max-width:768px)" srcset="./images/footer/logo_white_sp.png">
-                <source media="(min-width:769px)" srcset="./images/footer/logo_white_pc.png">
-                <img src="./images/footer/logo_white_sp.png" alt="logo">
+                <source media="(max-width:768px)" srcset="./images/footer/footer_logo_sp.png">
+                <source media="(min-width:769px)" srcset="./images/footer/footer_logo_pc.png">
+                <img src="./images/footer/footer_logo_sp.png" alt="logo">
             </picture>
             <ul>
                 <div class="footer_box">
@@ -178,13 +174,15 @@
                 </div>
             </ul>
             <p>株式会社スマートサイクル</p>
-            <small>©　SmartCycle, Inc. 2022</small>
+            <address>東京都xx区xx丁目xx番地<br>xx-xxxx-xxxx</address>
+            <small>© SmartCycle, Inc. 2022</small>
         </footer>
     </main>
     <!-- js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/carousel.js"></script>
+    <script src="./js/hamburger.js"></script>
 
 </body>
 

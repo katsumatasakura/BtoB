@@ -17,7 +17,10 @@ footer {
 
             li {
                 margin-bottom: 0.5rem;
-                color: $white;
+
+                a {
+                    color: $white;
+                }
 
                 &::before {
                     font-family: "Font Awesome 5 Free";
@@ -30,9 +33,19 @@ footer {
             }
         }
     }
+    
+    p {
+        margin-bottom: 0.2rem;
+    }
+    
+    address {
+        font-style: normal;
+        font-size: 1.2rem;
+    }
 
     small {
         display: block;
         text-align: center;
+        margin-top: 5rem;
     }
 }

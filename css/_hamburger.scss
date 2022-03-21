@@ -1,0 +1,20 @@
+//
+// ハンバーガーメニューがクリックされたときのスタイル
+//
+
+.hamburger_button {
+    &.active {
+        &::before {
+            font-family: "Font Awesome 5 Free";
+            font-size: 2rem;
+            font-weight: 900;
+            content: "\f00d";
+        }
+    }
+}
+
+.sp_menu {
+    &.panelactive {
+        display: block;
+    }
+}

@@ -2,6 +2,10 @@
 // 導入事例のスタイル
 //
 
+#ex {
+    padding-bottom: 2rem;
+}
+
 .ex_box {
     box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
     //border: solid 1px $black;
@@ -30,6 +34,7 @@
     
     h2 {
         margin-left: 2rem;
+        margin-bottom: 1rem;
     }
     
     p {

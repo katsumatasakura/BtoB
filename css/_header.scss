@@ -23,6 +23,7 @@ header {
             font-size: 2rem;
             font-weight: 900;
             content: "\f0c9";
+            color: $navy;
         }
     }
 
@@ -43,7 +44,12 @@ header {
             margin: 5rem;
 
             li {
+                font-size: 2rem;
                 padding: 1.5rem 0;
+                
+                a{
+                    display: block;
+                }
             }
         }
     }

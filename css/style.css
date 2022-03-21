@@ -17,11 +17,14 @@ section {
 }
 
 h1 {
-  font-family: yu-gothic-pr6n, sans-serif;
+  font-family: kozuka-gothic-pr6n, sans-serif;
   font-size: 2.8rem;
-  font-weight: 500;
+  font-weight: 700;
+  font-style: normal;
   text-align: center;
   position: relative;
+  margin-top: 0;
+  color: #241F60;
 }
 h1::before {
   content: "";
@@ -29,7 +32,7 @@ h1::before {
   height: 2px;
   background-color: #40F3A6;
   position: absolute;
-  top: 4rem;
+  top: 4.3rem;
   left: calc(50% - 1rem);
 }
 
@@ -53,6 +56,8 @@ a {
   text-align: center;
   background-color: #40F3A6;
   color: #241F60;
+  font-size: 1.8rem;
+  font-weight: 600;
   border-radius: 7px;
   box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.2);
 }
@@ -95,6 +100,7 @@ header .hamburger_button::before {
   font-size: 2rem;
   font-weight: 900;
   content: "\f0c9";
+  color: #241F60;
 }
 header .sp_menu {
   display: none;
@@ -113,7 +119,11 @@ header .sp_menu .sp_menu_list {
   margin: 5rem;
 }
 header .sp_menu .sp_menu_list li {
+  font-size: 2rem;
   padding: 1.5rem 0;
+}
+header .sp_menu .sp_menu_list li a {
+  display: block;
 }
 
 @media (max-width: 768px) {
@@ -127,6 +137,7 @@ header .sp_menu .sp_menu_list li {
   margin-top: 6rem;
   padding-top: 2rem;
   background: url(../images/firstview/bg.png);
+  background-size: cover;
 }
 .firstview h2 {
   width: 24rem;
@@ -144,7 +155,7 @@ header .sp_menu .sp_menu_list li {
   display: flex;
   margin: 0;
   position: fixed;
-  top: 61rem;
+  top: calc(100% - 6.1rem);
   width: 100vw;
   background: #fff;
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
@@ -159,6 +170,7 @@ header .sp_menu .sp_menu_list li {
 }
 
 #merit > p {
+  margin-top: 0;
   text-align: center;
 }
 #merit .container {
@@ -199,6 +211,9 @@ header .sp_menu .sp_menu_list li {
   margin-left: 0;
   padding: 4rem 2rem;
 }
+#fee h1 {
+  color: #fff;
+}
 #fee .month_fee {
   text-align: right;
 }
@@ -226,6 +241,10 @@ header .sp_menu .sp_menu_list li {
   margin: auto 1rem;
 }
 
+#ex {
+  padding-bottom: 2rem;
+}
+
 .ex_box {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   border-radius: 7px;
@@ -248,6 +267,7 @@ header .sp_menu .sp_menu_list li {
 }
 .ex_box h2 {
   margin-left: 2rem;
+  margin-bottom: 1rem;
 }
 .ex_box p {
   margin: 0 2rem;
@@ -260,11 +280,19 @@ header .sp_menu .sp_menu_list li {
   padding: 4rem 2rem;
   color: #fff;
 }
+#offer h1 {
+  color: #fff;
+}
+
+#inquiry {
+  padding-bottom: 0.1rem;
+}
 
 .button.question {
   background-color: #fff;
   border: 1px solid #d9d9d9;
   padding: 1rem 0;
+  box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 footer {
@@ -282,6 +310,8 @@ footer ul .footer_box {
 }
 footer ul .footer_box li {
   margin-bottom: 0.5rem;
+}
+footer ul .footer_box li a {
   color: #fff;
 }
 footer ul .footer_box li::before {
@@ -291,9 +321,28 @@ footer ul .footer_box li::before {
   content: "\f054";
   margin-right: 0.5rem;
 }
+footer p {
+  margin-bottom: 0.2rem;
+}
+footer address {
+  font-style: normal;
+  font-size: 1.2rem;
+}
 footer small {
   display: block;
   text-align: center;
+  margin-top: 5rem;
+}
+
+.hamburger_button.active::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 2rem;
+  font-weight: 900;
+  content: "\f00d";
+}
+
+.sp_menu.panelactive {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
