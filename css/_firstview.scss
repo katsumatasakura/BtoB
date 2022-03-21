@@ -39,7 +39,7 @@
 
         h2 {
             position: absolute;
-            top: 8rem;
+            top: 5rem;
             left: calc(50% - 42rem);
             width: 74rem;
 
@@ -58,6 +58,7 @@
         .woman {
             position: absolute;
             left: calc(100vw - 127rem);
+            bottom: 0;
 
             img {
                 width: 127rem;

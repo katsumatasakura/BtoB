@@ -31,6 +31,10 @@
             
             .button {
                 margin: 2rem;
+                
+                &.question {
+                    font-size: 2.4rem;
+                } 
             }
         }
     }
