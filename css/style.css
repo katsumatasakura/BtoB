@@ -467,16 +467,19 @@ footer ul .footer_box {
 }
 footer ul .footer_box li {
   margin-bottom: 0.5rem;
-}
-footer ul .footer_box li a {
-  color: #fff;
+  position: relative;
 }
 footer ul .footer_box li::before {
   font-family: "Font Awesome 5 Free";
   font-size: 1.3rem;
   font-weight: 900;
   content: "\f054";
-  margin-right: 0.5rem;
+  position: absolute;
+  top: 0.1rem;
+  left: -1rem;
+}
+footer ul .footer_box li a {
+  color: #fff;
 }
 footer p {
   margin-bottom: 0.2rem;
@@ -491,6 +494,14 @@ footer small {
   margin-top: 5rem;
 }
 
+@media (min-width: 769px) {
+  footer {
+    padding: 4rem 14rem 2rem;
+  }
+  footer .footer_container {
+    display: flex;
+  }
+}
 .hamburger_button.active::before {
   font-family: "Font Awesome 5 Free";
   font-size: 2rem;
