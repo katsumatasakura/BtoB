@@ -603,4 +603,80 @@ header .sp_menu .sp_menu_list li a {
   display: block;
 }
 
+/*リンクの形状*/
+#conversion_buttons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #241F60;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  color: #40F3A6;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.6rem;
+  transition: all 0.3s;
+  filter: drop-shadow(-1px 1px 3px gray);
+}
+#conversion_buttons a::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 2rem;
+  color: #40F3A6;
+  font-weight: 900;
+  content: "\f077";
+}
+@media (max-width: 768px) {
+  #conversion_buttons a {
+    display: none;
+  }
+}
+
+#conversion_buttons a:hover {
+  background: #241F60;
+}
+
+/*リンクを右下に固定*/
+#conversion_buttons {
+  position: fixed;
+  right: 1rem;
+  bottom: 6rem;
+  z-index: 2;
+  /*はじめは非表示*/
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+/*　上に上がる動き　*/
+#conversion_buttons.UpMove {
+  animation: UpAnime 0.5s forwards;
+}
+
+@keyframes UpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*　下に下がる動き　*/
+#conversion_buttons.DownMove {
+  animation: DownAnime 0.5s forwards;
+}
+
+@keyframes DownAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(100px);
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
