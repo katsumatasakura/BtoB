@@ -25,15 +25,14 @@
                 border-radius: 7px;
                 box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
                 background-repeat: no-repeat;
+                background-position: center;
 
                 &.first {
                     background-image: url(../images/merit/merit1.png);
-                    background-position-x: 1rem;
                 }
 
                 &.second {
                     background-image: url(../images/merit/merit2.png);
-                    background-position-x: 1rem;
                 }
 
                 &.third {

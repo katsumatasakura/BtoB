@@ -33,6 +33,7 @@
     .firstview {
         background: url(../images/firstview/bg_pc.png);
         background-size: cover;
+        background-position: center;
         position: relative;
         height: calc(100vh - 10rem);
         margin-top: 10rem;
@@ -57,11 +58,11 @@
 
         .woman {
             position: absolute;
-            left: calc(100vw - 127rem);
+            left: 34vw;
             bottom: 0;
 
             img {
-                width: 127rem;
+                width: 66vw;
             }
         }
     }

@@ -224,6 +224,7 @@ header .sp_menu .sp_menu_list li a {
   .firstview {
     background: url(../images/firstview/bg_pc.png);
     background-size: cover;
+    background-position: center;
     position: relative;
     height: calc(100vh - 10rem);
     margin-top: 10rem;
@@ -245,11 +246,11 @@ header .sp_menu .sp_menu_list li a {
   }
   .firstview .woman {
     position: absolute;
-    left: calc(100vw - 127rem);
+    left: 34vw;
     bottom: 0;
   }
   .firstview .woman img {
-    width: 127rem;
+    width: 66vw;
   }
 }
 .action_button {
@@ -295,14 +296,13 @@ header .sp_menu .sp_menu_list li a {
   border-radius: 7px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   background-repeat: no-repeat;
+  background-position: center;
 }
 #merit .container .merit_box .meritimage.first {
   background-image: url(../images/merit/merit1.png);
-  background-position-x: 1rem;
 }
 #merit .container .merit_box .meritimage.second {
   background-image: url(../images/merit/merit2.png);
-  background-position-x: 1rem;
 }
 #merit .container .merit_box .meritimage.third {
   background-image: url(../images/merit/merit3.png);
@@ -447,15 +447,28 @@ header .sp_menu .sp_menu_list li a {
   justify-content: center;
   align-items: center;
   background: #241F60;
-  border-radius: 5px;
-  width: 60px;
-  height: 60px;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
   color: #40F3A6;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 0.6rem;
   transition: all 0.3s;
+  filter: drop-shadow(-1px 1px 3px gray);
+}
+#page-top a::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 2rem;
+  color: #40F3A6;
+  font-weight: 900;
+  content: "\f077";
+}
+@media (min-width: 769px) {
+  #page-top a {
+    display: none;
+  }
 }
 
 #page-top a:hover {
