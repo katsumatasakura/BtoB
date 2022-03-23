@@ -21,11 +21,12 @@
 
             .meritimage {
                 width: 100%;
-                height: 15.4rem;
+                aspect-ratio: 336/155;
                 border-radius: 7px;
                 box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
                 background-repeat: no-repeat;
                 background-position: center;
+                background-size: contain;
 
                 &.first {
                     background-image: url(../images/merit/merit1.png);

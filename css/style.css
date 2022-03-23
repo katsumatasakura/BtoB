@@ -73,7 +73,7 @@ a {
   }
 
   h1 {
-    font-size: 4.8rem;
+    font-size: 4rem;
   }
   h1::before {
     width: 4rem;
@@ -83,14 +83,14 @@ a {
   }
 
   h2 {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
   }
 
   .button {
     width: 38rem;
     margin: 0 auto 2rem;
     padding: 2rem 0;
-    font-size: 3.2rem;
+    font-size: 2.4rem;
     font-weight: 400;
   }
 }
@@ -148,7 +148,7 @@ header .sp_menu .sp_menu_list li a {
 }
 @media (min-width: 769px) {
   header {
-    padding: 1rem 10rem 1rem 14rem;
+    padding: 1rem 8rem 1rem 12rem;
   }
   header .hamburger_button {
     display: none;
@@ -157,24 +157,24 @@ header .sp_menu .sp_menu_list li a {
     display: flex;
   }
   header .pc_menu .pc_menu_list li {
-    font-size: 3.2rem;
+    font-size: 2rem;
     box-sizing: border-box;
     text-align: center;
   }
   header .pc_menu .pc_menu_list li:nth-child(1) {
-    width: 20rem;
-  }
-  header .pc_menu .pc_menu_list li:nth-child(2) {
     width: 15rem;
   }
+  header .pc_menu .pc_menu_list li:nth-child(2) {
+    width: 10rem;
+  }
   header .pc_menu .pc_menu_list li:nth-child(3) {
-    width: 20rem;
+    width: 15rem;
   }
   header .pc_menu .pc_menu_list li:nth-child(4) {
-    width: 25rem;
+    width: 18rem;
   }
   header .pc_menu .pc_menu_list li:nth-child(5) {
-    width: 27.2rem;
+    width: 20rem;
   }
   header .pc_menu .pc_menu_list li a {
     display: inline-block;
@@ -232,7 +232,7 @@ header .sp_menu .sp_menu_list li a {
   .firstview h2 {
     position: absolute;
     top: 5rem;
-    left: calc(50% - 42rem);
+    left: calc(50% - 32rem);
     width: 74rem;
   }
   .firstview h2 span {
@@ -240,17 +240,20 @@ header .sp_menu .sp_menu_list li a {
   }
   .firstview .logo {
     position: absolute;
-    top: 23rem;
-    left: 17rem;
+    top: 25vh;
+    left: 9vw;
     z-index: 99;
+  }
+  .firstview .logo img {
+    width: 30vw;
   }
   .firstview .woman {
     position: absolute;
-    left: 34vw;
+    left: 42vw;
     bottom: 0;
   }
   .firstview .woman img {
-    width: 66vw;
+    width: 56vw;
   }
 }
 .action_button {
@@ -292,11 +295,12 @@ header .sp_menu .sp_menu_list li a {
 }
 #merit .container .merit_box .meritimage {
   width: 100%;
-  height: 15.4rem;
+  aspect-ratio: 336/155;
   border-radius: 7px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 }
 #merit .container .merit_box .meritimage.first {
   background-image: url(../images/merit/merit1.png);
@@ -601,82 +605,6 @@ header .sp_menu .sp_menu_list li a {
 
 .sp_menu.panelactive {
   display: block;
-}
-
-/*リンクの形状*/
-#conversion_buttons a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #241F60;
-  border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
-  color: #40F3A6;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 0.6rem;
-  transition: all 0.3s;
-  filter: drop-shadow(-1px 1px 3px gray);
-}
-#conversion_buttons a::before {
-  font-family: "Font Awesome 5 Free";
-  font-size: 2rem;
-  color: #40F3A6;
-  font-weight: 900;
-  content: "\f077";
-}
-@media (max-width: 768px) {
-  #conversion_buttons a {
-    display: none;
-  }
-}
-
-#conversion_buttons a:hover {
-  background: #241F60;
-}
-
-/*リンクを右下に固定*/
-#conversion_buttons {
-  position: fixed;
-  right: 1rem;
-  bottom: 6rem;
-  z-index: 2;
-  /*はじめは非表示*/
-  opacity: 0;
-  transform: translateY(100px);
-}
-
-/*　上に上がる動き　*/
-#conversion_buttons.UpMove {
-  animation: UpAnime 0.5s forwards;
-}
-
-@keyframes UpAnime {
-  from {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-/*　下に下がる動き　*/
-#conversion_buttons.DownMove {
-  animation: DownAnime 0.5s forwards;
-}
-
-@keyframes DownAnime {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(100px);
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

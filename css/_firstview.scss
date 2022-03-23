@@ -41,7 +41,7 @@
         h2 {
             position: absolute;
             top: 5rem;
-            left: calc(50% - 42rem);
+            left: calc(50% - 32rem);
             width: 74rem;
 
             span {
@@ -51,18 +51,22 @@
 
         .logo {
             position: absolute;
-            top: 23rem;
-            left: 17rem;
+            top: 25vh;
+            left: 9vw;
             z-index: 99;
+            
+            img {
+                width: 30vw;
+            }
         }
 
         .woman {
             position: absolute;
-            left: 34vw;
+            left: 42vw;
             bottom: 0;
 
             img {
-                width: 66vw;
+                width: 56vw;
             }
         }
     }

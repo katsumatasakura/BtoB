@@ -68,7 +68,7 @@ header {
 // pc表示
 @media #{$pc} {
     header {
-        padding: 1rem 10rem 1rem 14rem;
+        padding: 1rem 8rem 1rem 12rem;
 
         .hamburger_button {
             display: none;
@@ -80,28 +80,28 @@ header {
                 display: flex;
 
                 li {
-                    font-size: 3.2rem;
+                    font-size: 2rem;
                     box-sizing: border-box;
                     text-align: center;
 
                     &:nth-child(1) {
-                        width: 20rem;
-                    }
-
-                    &:nth-child(2) {
                         width: 15rem;
                     }
 
+                    &:nth-child(2) {
+                        width: 10rem;
+                    }
+
                     &:nth-child(3) {
-                        width: 20rem;
+                        width: 15rem;
                     }
 
                     &:nth-child(4) {
-                        width: 25rem;
+                        width: 18rem;
                     }
 
                     &:nth-child(5) {
-                        width: 27.2rem;
+                        width: 20rem;
                     }
 
                     a {
