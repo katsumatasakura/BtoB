@@ -426,7 +426,7 @@ header .sp_menu .sp_menu_list li a {
     padding: 5rem 14rem;
   }
   #fee .month_fee {
-    margin-left: calc(50% - 10rem);
+    margin-left: calc(50% + 21rem);
   }
   #fee .container {
     margin-bottom: 7rem;
